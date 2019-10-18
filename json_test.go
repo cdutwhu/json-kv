@@ -73,11 +73,11 @@ func TestInit(t *testing.T) {
 
 func TestUnfold(t *testing.T) {
 	defer tmTrack(time.Now())
-	if jsonbytes, e := ioutil.ReadFile("./infmt1.json"); e == nil {
+	if jsonbytes, e := ioutil.ReadFile("./testjqrst.json"); e == nil {
 		jstr := jStr(string(jsonbytes))
 		jstr.Init()
 		fPln("--- Init ---")
-		Unfold()
+		fPln(jstr.Unfold())
 	}
 }
 

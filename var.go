@@ -105,6 +105,7 @@ var (
 	mIPathPos   = make(map[string]int)    //
 	mIPathValue = make(map[string]string) //
 	mIPathOID   = make(map[string]string) //
+	mOIDIPath   = make(map[string]string) //
 	mOIDObj     = make(map[string]string) //
 	mOIDLvl     = make(map[string]int)    // from 1 ...
 	mOIDType    = make(map[string]JTYPE)  // oid's type is OBJ or ARR|OBJ

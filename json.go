@@ -310,6 +310,7 @@ func (jstr jStr) Init() error {
 
 			if !t.IsLeafValue() {
 				mIPathOID[fip] = oid
+				mOIDIPath[oid] = fip
 			}
 		}
 
@@ -429,33 +430,50 @@ func QueryPV(path string, value interface{}) (mLvlOIDs map[int][]string, maxLvl 
 }
 
 // Unfold :
-func Unfold() string {
+func (jstr jStr) Unfold() string {
+	frame := ""
 	if len(lsLvlIPaths[1]) == 0 {
-		return "empty json"
-	}
-	if len(lsLvlIPaths[1]) != 0 && len(lsLvlIPaths[2]) == 0 {
-		return "return whole json"
-	}
-
-	lvl2path := S(lsLvlIPaths[2][0]).RmTailFromLast("@").V()
-	if mLvlOIDs, _ := QueryPV(lvl2path, "*.*"); mLvlOIDs != nil && len(mLvlOIDs) > 0 {
-		for _, lvl := range MapKeys(mLvlOIDs).([]int) {
-			for _, oid := range mLvlOIDs[lvl] {
-				fPf("[%s] %s\n", oid, mOIDObj[oid])
-				if mOIDType[oid].IsObjArr() {
-					fPf(" *** ex ***: array object\n")
-					for _, oid := range AOIDStrToOIDs(mOIDObj[oid]) {
-						fPf("[%s] %s\n", oid, mOIDObj[oid])
-					}
-				}
-			}
-			fPln(" ----------------------------------------------------------------- ")
-		}
+		frame = ""
+	} else if len(lsLvlIPaths[1]) != 0 && len(lsLvlIPaths[2]) == 0 {
+		frame = string(jstr)
 	} else {
-		fPln(mLvlOIDs)
+		lvl2path := S(lsLvlIPaths[2][0]).RmTailFromLast("@").V()
+		if mLvlOIDs, _ := QueryPV(lvl2path, "*.*"); mLvlOIDs != nil && len(mLvlOIDs) > 0 {
+			for _, lvl := range MapKeys(mLvlOIDs).([]int) {
+				for _, oid := range mLvlOIDs[lvl] {
+					field := S(mOIDIPath[oid]).RmTailFromLast("@").V()
+					head := fSf("{\n  \"%s\": ", field)
+					frame = fSf("%s%s\n}", head, mOIDObj[oid])
+					// fPln(frame)
+					// if mOIDType[oid].IsObjArr() {
+					// 	fPf(" *** ex ***: array object\n")
+					// 	for _, oid := range AOIDStrToOIDs(mOIDObj[oid]) {
+					// 		fPf("[%s] %s\n", oid, mOIDObj[oid])
+					// 	}
+					// }
+				}
+				// fPln("\n ----------------------------------------------------------------- ")
+			}
+		}
 	}
 
-	return ""
+	// expand all
+	r, _ := regexp.Compile("[a-f0-9]{40}")
+	for {
+		if oids := r.FindAllString(frame, -1); oids != nil {
+			for _, oid := range oids {
+				frame = sReplaceAll(frame, oid, mOIDObj[oid])
+			}
+		} else {
+			break
+		}
+	}
+
+	if !jStr(frame).IsJSON() {
+		panic("Unfold error, NOT VALID JSON")
+	}
+
+	return frame
 }
 
 // Query : unfinished ...
