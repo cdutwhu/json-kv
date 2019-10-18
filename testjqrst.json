@@ -1,0 +1,2382 @@
+{
+  "arrobjs": [
+    {
+      "f1": "v1"
+    },
+    {
+      "f2": "v2"
+    }
+  ],
+  "NAPCodeFrame": {
+    "RefId": "68cd1fba-65c5-4d44-9511-1c852d0e25da",
+    "NAPTestRefId": "3e6aabba-8c62-4bcd-a0f6-e6995c039453",
+    "TestContent": {
+      "NAPTestLocalId": "x001068024_Spelling",
+      "TestName": "NAPLAN Spelling Yr 9, 2017",
+      "TestLevel": {
+        "Code": "9"
+      },
+      "TestType": "Normal",
+      "Domain": "Spelling",
+      "TestYear": "2017",
+      "StagesCount": 2,
+      "DomainBands": {
+        "Band1Lower": 0,
+        "Band1Upper": 258,
+        "Band2Lower": 258,
+        "Band2Upper": 318,
+        "Band3Lower": 318,
+        "Band3Upper": 368,
+        "Band4Lower": 368,
+        "Band4Upper": 417,
+        "Band5Lower": 417,
+        "Band5Upper": 466,
+        "Band6Lower": 466,
+        "Band6Upper": 526,
+        "Band7Lower": 526,
+        "Band7Upper": 574,
+        "Band8Lower": 574,
+        "Band8Upper": 633,
+        "Band9Lower": 633,
+        "Band9Upper": 681,
+        "Band10Lower": 681,
+        "Band10Upper": 999
+      },
+      "DomainProficiency": {
+        "Level1Lower": 10,
+        "Level1Upper": 20,
+        "Level2Lower": 30,
+        "Level2Upper": 40,
+        "Level3Lower": 50,
+        "Level3Upper": 60,
+        "Level4Lower": 70,
+        "Level4Upper": 80
+      }
+    },
+    "TestletList": {
+      "Testlet": [
+        {
+          "NAPTestletRefId": "2b7c9606-09b9-43c2-a935-6a2db78bf2c9",
+          "TestletContent": {
+            "NAPTestletLocalId": "x00101923",
+            "TestletName": "S11",
+            "Node": "S1",
+            "LocationInStage": 1,
+            "TestletMaximumScore": 10
+          },
+          "TestItemList": {
+            "TestItem": [
+              {
+                "TestItemRefId": "147ff54e-8f45-420a-ad56-fbbf0371418a",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101924",
+                  "ItemName": "x00101924",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": true,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "RVqHpyvGOW",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "cvlej479",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "47b92d64-2d26-4489-8d12-783881fd58e7",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-00-AIA",
+                  "ItemName": "x00101923-00-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": true,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "147ff54e-8f45-420a-ad56-fbbf0371418a",
+                        "SubstituteItemLocalId": "x00101924",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "pjzbh525",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "8435cb72-599a-479b-9cf2-1171b2b90070",
+                "SequenceNumber": 1,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101925",
+                  "ItemName": "x00101925",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "uVQMSnuKQC",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "dilxw732",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "514665b6-20c2-45e4-be04-f99ea6fc86f3",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101926",
+                  "ItemName": "x00101926",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "rWskLhlHIY",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "ombma616",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "5929d065-4332-4f02-a1f2-6dbf4e91fa54",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-02-AIA",
+                  "ItemName": "x00101923-02-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "514665b6-20c2-45e4-be04-f99ea6fc86f3",
+                        "SubstituteItemLocalId": "x00101926",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "lheww703",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "8fa5d06e-12e8-4697-9c34-0bd18b1a9614",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101927",
+                  "ItemName": "x00101927",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "kQrqQrHLWQ",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "iybpg200",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "3856b48a-35bf-4c2a-898f-7b23afe3c654",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-03-AIA",
+                  "ItemName": "x00101923-03-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "8fa5d06e-12e8-4697-9c34-0bd18b1a9614",
+                        "SubstituteItemLocalId": "x00101927",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "xplxs093",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "311d23c4-02f1-482e-accc-0b39e43280b0",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101928",
+                  "ItemName": "x00101928",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "DYjqmRCTNS",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "wshdw256",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "b64ea522-1798-4d95-8b42-fbc1614fa1bc",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-04-AIA",
+                  "ItemName": "x00101923-04-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "311d23c4-02f1-482e-accc-0b39e43280b0",
+                        "SubstituteItemLocalId": "x00101928",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "njbxr591",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "d5b64a21-f2f9-422c-9d59-b460ab840704",
+                "SequenceNumber": 5,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101929",
+                  "ItemName": "x00101929",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "CDOmoWMrhh",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "aisdm164",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "1a7869df-218b-40d2-b8f5-acb4a78e5e56",
+                "SequenceNumber": 5,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-05-AIA",
+                  "ItemName": "x00101923-05-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "d5b64a21-f2f9-422c-9d59-b460ab840704",
+                        "SubstituteItemLocalId": "x00101929",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "uqtpi664",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "1f6d7465-341f-48a4-835f-bb58064f699f",
+                "SequenceNumber": 6,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101930",
+                  "ItemName": "x00101930",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "CeFTEwJfhy",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "ymkws510",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "39c58090-3793-4a8d-9bca-d03c9d3b9f1d",
+                "SequenceNumber": 6,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-06-AIA",
+                  "ItemName": "x00101923-06-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "1f6d7465-341f-48a4-835f-bb58064f699f",
+                        "SubstituteItemLocalId": "x00101930",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "qxyfs521",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "9630c06d-9a0d-4134-b848-3191a6399546",
+                "SequenceNumber": 7,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101931",
+                  "ItemName": "x00101931",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "jsasaEBtyO",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "nmiio071",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "c71ce75e-206d-4398-b822-d7ef03153627",
+                "SequenceNumber": 7,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-07-AIA",
+                  "ItemName": "x00101923-07-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "9630c06d-9a0d-4134-b848-3191a6399546",
+                        "SubstituteItemLocalId": "x00101931",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "qqxlm527",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "3070ee35-8ec2-4a2c-a062-b0e5a1001ca8",
+                "SequenceNumber": 8,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101932",
+                  "ItemName": "x00101932",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "HFQpNpnbah",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "yuzgq091",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "2ce95a74-5c0f-423b-807f-bfe4d13722dc",
+                "SequenceNumber": 8,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-08-AIA",
+                  "ItemName": "x00101923-08-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "3070ee35-8ec2-4a2c-a062-b0e5a1001ca8",
+                        "SubstituteItemLocalId": "x00101932",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "hggqu275",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "dc209209-95c9-4262-97b3-950ec43d676c",
+                "SequenceNumber": 9,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101933",
+                  "ItemName": "x00101933",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "PlvocBipjE",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "kpdvn759",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "0b78c8f6-3a6e-4bf8-97be-c3f6ab2cebff",
+                "SequenceNumber": 9,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101923-09-AIA",
+                  "ItemName": "x00101923-09-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "dc209209-95c9-4262-97b3-950ec43d676c",
+                        "SubstituteItemLocalId": "x00101933",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "sfwma416",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "NAPTestletRefId": "8dd21835-62c4-4123-867c-d2527b82d037",
+          "TestletContent": {
+            "NAPTestletLocalId": "x00101934",
+            "TestletName": "S12",
+            "Node": "S1",
+            "LocationInStage": 2,
+            "TestletMaximumScore": 10
+          },
+          "TestItemList": {
+            "TestItem": [
+              {
+                "TestItemRefId": "f3212612-e55d-480a-857a-ebc315d6f886",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101935",
+                  "ItemName": "x00101935",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "PYYqnsfTBr",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "gfzws345",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "cb633db1-0396-48a5-bcb1-ccc092736e48",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-00-AIA",
+                  "ItemName": "x00101934-00-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "f3212612-e55d-480a-857a-ebc315d6f886",
+                        "SubstituteItemLocalId": "x00101935",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "kynrm705",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "533708d3-9286-42e7-a985-4e76302526f3",
+                "SequenceNumber": 1,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101936",
+                  "ItemName": "x00101936",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "ZjNOJwDONL",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "vuxgk507",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "92f37453-f0c4-4180-9ba2-65a8db004512",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101937",
+                  "ItemName": "x00101937",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "kXSKNPXhBX",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "chqfl252",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "9c167b60-d11d-40cf-a04f-8612de4dc518",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-02-AIA",
+                  "ItemName": "x00101934-02-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "92f37453-f0c4-4180-9ba2-65a8db004512",
+                        "SubstituteItemLocalId": "x00101937",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "wwiro054",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "035622cf-7cb8-41de-9871-4385e2644881",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101938",
+                  "ItemName": "x00101938",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "eyIbGZMVAx",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "zdemp905",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "bb3450ed-525a-4d2a-91c7-da7e0532fc38",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-03-AIA",
+                  "ItemName": "x00101934-03-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "035622cf-7cb8-41de-9871-4385e2644881",
+                        "SubstituteItemLocalId": "x00101938",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "avezc387",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "8f8c1679-1db9-4d68-8d05-dd955365f023",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101939",
+                  "ItemName": "x00101939",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "gSkrdtKsDI",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "nlcxm078",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "58e540b4-2631-4877-8919-ff04ea1cbffb",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-04-AIA",
+                  "ItemName": "x00101934-04-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "8f8c1679-1db9-4d68-8d05-dd955365f023",
+                        "SubstituteItemLocalId": "x00101939",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "irenv146",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "ce1dc97f-3fc5-49a9-9b62-e87c6c912b6e",
+                "SequenceNumber": 5,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101940",
+                  "ItemName": "x00101940",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "IhmWmpiDQl",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "orghi017",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "58d0e8c2-3a7c-43e5-8e32-f4d6a9c50193",
+                "SequenceNumber": 5,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-05-AIA",
+                  "ItemName": "x00101934-05-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "ce1dc97f-3fc5-49a9-9b62-e87c6c912b6e",
+                        "SubstituteItemLocalId": "x00101940",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "wemvb752",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "e1be5003-37c5-431d-8c60-8a8293f3daf7",
+                "SequenceNumber": 6,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101941",
+                  "ItemName": "x00101941",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "sGmIPAHYos",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "pqneu096",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "f38065c2-2e68-49cf-9812-3a44625f3e9f",
+                "SequenceNumber": 6,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-06-AIA",
+                  "ItemName": "x00101934-06-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "e1be5003-37c5-431d-8c60-8a8293f3daf7",
+                        "SubstituteItemLocalId": "x00101941",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "ffvam564",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "40443805-a326-43f1-b63c-b77aeabdf9f9",
+                "SequenceNumber": 7,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101942",
+                  "ItemName": "x00101942",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "yYkwTQLLuM",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "iwulu761",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "03c5e1f3-efb5-40c5-a6c3-551caafdee0f",
+                "SequenceNumber": 7,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-07-AIA",
+                  "ItemName": "x00101934-07-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "40443805-a326-43f1-b63c-b77aeabdf9f9",
+                        "SubstituteItemLocalId": "x00101942",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "rping136",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "f225f421-8862-4c24-9f22-40128b51d202",
+                "SequenceNumber": 8,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101943",
+                  "ItemName": "x00101943",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "pOzDkMjSBJ",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "beshg302",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "c8762a67-da35-4d52-8bce-8a0184576060",
+                "SequenceNumber": 8,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-08-AIA",
+                  "ItemName": "x00101934-08-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "f225f421-8862-4c24-9f22-40128b51d202",
+                        "SubstituteItemLocalId": "x00101943",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "rwwff928",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "df0eedb7-5d4b-4e5c-a969-5dca411428af",
+                "SequenceNumber": 9,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101944",
+                  "ItemName": "x00101944",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "CpFaByUkkE",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "uymcw968",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "d6dee12a-fbd9-44d2-96dd-15afeb61066d",
+                "SequenceNumber": 9,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101934-09-AIA",
+                  "ItemName": "x00101934-09-AIA",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ItemSubstitutedForList": {
+                    "SubstituteItem": [
+                      {
+                        "SubstituteItemRefId": "df0eedb7-5d4b-4e5c-a969-5dca411428af",
+                        "SubstituteItemLocalId": "x00101944",
+                        "PNPCodeList": {
+                          "PNPCode": [
+                            "AIA"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  },
+                  "StimulusList": {
+                    "Stimulus": [
+                      {
+                        "StimulusLocalId": "zaeaf519",
+                        "Content": ""
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "NAPTestletRefId": "9d73bce4-3920-4ea9-bee4-50a808aa2862",
+          "TestletContent": {
+            "NAPTestletLocalId": "x00101945",
+            "TestletName": "S21",
+            "Node": "S2",
+            "LocationInStage": 1,
+            "TestletMaximumScore": 5
+          },
+          "TestItemList": {
+            "TestItem": [
+              {
+                "TestItemRefId": "a82ffbe8-1786-41f1-9304-64d96ce0f275",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101946",
+                  "ItemName": "x00101946",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "A",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "cee9f55f-9eec-4db6-8baa-e3142bf6cc47",
+                "SequenceNumber": 1,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101947",
+                  "ItemName": "x00101947",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "NaIRaKJtrY",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "3c5de38f-176d-4054-9160-b12ca113155f",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101948",
+                  "ItemName": "x00101948",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "C",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "ef7a2a8a-17e5-49c4-b359-398299434f71",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101949",
+                  "ItemName": "x00101949",
+                  "ItemType": "IO",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "CorrectAnswer": "nwXUIxpGHM",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "73ce9045-1112-40cf-b164-751e772a6d2d",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101950",
+                  "ItemName": "x00101950",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "C",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "NAPTestletRefId": "d6911df1-faa7-428a-9682-80e8883341b2",
+          "TestletContent": {
+            "NAPTestletLocalId": "x00101951",
+            "TestletName": "S22",
+            "Node": "S2",
+            "LocationInStage": 2,
+            "TestletMaximumScore": 5
+          },
+          "TestItemList": {
+            "TestItem": [
+              {
+                "TestItemRefId": "bf37f07e-937a-46ec-b056-5374ff22a487",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101952",
+                  "ItemName": "x00101952",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "EJKHbWOjgt",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "3180d954-5938-4154-9a1b-accc25bfba02",
+                "SequenceNumber": 1,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101953",
+                  "ItemName": "x00101953",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "C",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "0e6db90d-7393-4af0-af4e-498b8e0cb0f5",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101954",
+                  "ItemName": "x00101954",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "FpsdTZrsrP",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "3d99f28e-7000-44ae-a345-35a3c015eb09",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101955",
+                  "ItemName": "x00101955",
+                  "ItemType": "IA",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "CorrectAnswer": "GWoPRXTNAt",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "7fc2cd64-ac3e-4ff4-8c2e-0a5c8768992e",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101956",
+                  "ItemName": "x00101956",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "D",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "NAPTestletRefId": "5e153eb5-8b8c-4ba8-9435-0052b57947b8",
+          "TestletContent": {
+            "NAPTestletLocalId": "x00101957",
+            "TestletName": "S31",
+            "Node": "S3",
+            "LocationInStage": 1,
+            "TestletMaximumScore": 5
+          },
+          "TestItemList": {
+            "TestItem": [
+              {
+                "TestItemRefId": "8a81369a-eac4-406c-853b-62886e16ea62",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101958",
+                  "ItemName": "x00101958",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "C",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "f0eef089-422c-465a-a20d-6f4ad14a5009",
+                "SequenceNumber": 1,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101959",
+                  "ItemName": "x00101959",
+                  "ItemType": "IGO",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "CorrectAnswer": "RgaeFYANYu",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "a97b62f8-4b3c-49c0-9c0f-e6fb2e4f2937",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101960",
+                  "ItemName": "x00101960",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "B",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "4fce1fc5-88d8-4a09-b72b-6f694784820f",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101961",
+                  "ItemName": "x00101961",
+                  "ItemType": "HT",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "CorrectAnswer": "WHXcIWrbqH",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "bfa1a748-6110-4505-95b0-d96cb720e54c",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101962",
+                  "ItemName": "x00101962",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "A",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "NAPTestletRefId": "7228174f-a817-4951-882b-0ba629259ff1",
+          "TestletContent": {
+            "NAPTestletLocalId": "x00101963",
+            "TestletName": "S32",
+            "Node": "S3",
+            "LocationInStage": 2,
+            "TestletMaximumScore": 5
+          },
+          "TestItemList": {
+            "TestItem": [
+              {
+                "TestItemRefId": "d8283bf0-16f6-4544-aecb-39b61b9e39e6",
+                "SequenceNumber": 0,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101964",
+                  "ItemName": "x00101964",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "D",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "50732ff8-132d-4f6c-96d0-5b944eaef5b7",
+                "SequenceNumber": 1,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101965",
+                  "ItemName": "x00101965",
+                  "ItemType": "TE",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AES",
+                  "CorrectAnswer": "dsbOiIoEnF",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "4403a489-0599-417c-8022-b92746b5b278",
+                "SequenceNumber": 2,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101966",
+                  "ItemName": "x00101966",
+                  "ItemType": "IO",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "CorrectAnswer": "CnvCNqjQZW",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "0dbfc3e4-e7a0-4e72-a309-5313467acdb8",
+                "SequenceNumber": 3,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101967",
+                  "ItemName": "x00101967",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "C",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              },
+              {
+                "TestItemRefId": "780e560e-b3b3-4393-94c2-b0517bb5ab18",
+                "SequenceNumber": 4,
+                "TestItemContent": {
+                  "NAPTestItemLocalId": "x00101968",
+                  "ItemName": "x00101968",
+                  "ItemType": "MC",
+                  "Subdomain": "Spelling",
+                  "ItemDescriptor": "Descriptor #1",
+                  "ReleasedStatus": false,
+                  "MarkingType": "AS",
+                  "MultipleChoiceOptionCount": 4,
+                  "CorrectAnswer": "C",
+                  "MaximumScore": 1,
+                  "ItemDifficulty": 3,
+                  "ItemDifficultyLogit5": 0.8,
+                  "ItemDifficultyLogit62": 0.9,
+                  "ItemDifficultyLogit5SE": 0.8,
+                  "ItemDifficultyLogit62SE": 0.9,
+                  "ItemProficiencyBand": 3,
+                  "ItemProficiencyLevel": "Proficient",
+                  "ExemplarURL": "https://www.assessform.edu.au/Exemplar/1",
+                  "ContentDescriptionList": {
+                    "ContentDescription": [
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA072",
+                      "http://www.australiancurriculum.edu.au/curriculum/contentdescription/ACMNA037"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "NAPSecond": {
+    "RefId": "68cd1fba-65c5-4d44-9511-1c852d0e25db",
+    "TestContent": {
+      "Test": true
+    }
+  }
+}

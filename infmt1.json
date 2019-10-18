@@ -1,0 +1,143 @@
+{
+  "inquiry_skills": [
+    {
+      "name": "Comprehension: chronology, terms and concepts",
+      "skills": [
+        {
+          "skill": "read and understand historical texts",
+          "ac": [
+            ""
+          ]
+        },
+        {
+          "skill": "use historical terms and concepts in appropriate contexts",
+          "ac": [
+            "ACHHS165",
+            "ACHHS183"
+          ]
+        },
+        {
+          "skill": "sequence historical events to demonstrate the relationship between different periods, people and places",
+          "ac": [
+            "ACHHS164",
+            "ACHHS182"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Analysis and use of sources",
+      "skills": [
+        {
+          "skill": "identify different types of sources",
+          "ac": [
+            ""
+          ]
+        },
+        {
+          "skill": "identify the origin, content, context and purpose of primary and secondary sources",
+          "ac": [
+            "ACHHS169",
+            "ACHHS187"
+          ]
+        },
+        {
+          "skill": "process and synthesise information from a range of sources as evidence in an historical argument",
+          "ac": [
+            "ACHHS170",
+            "ACHHS188"
+          ]
+        },
+        {
+          "skill": "evaluate the reliability and usefulness of primary and secondary sources for a specific historical inquiry",
+          "ac": [
+            "ACHHS171",
+            "ACHHS189"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Perspectives and interpretations",
+      "skills": [
+        {
+          "skill": "identify and analyse the reasons for different perspectives in a particular historical context",
+          "ac": [
+            "ACHHS172",
+            "ACHHS173",
+            "ACHHS190",
+            "ACHHS191"
+          ]
+        },
+        {
+          "skill": "recognise that historians may interpret events and developments differently",
+          "ac": [
+            "ACHHS173",
+            "ACHHS191"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Empathetic understanding",
+      "skills": [
+        {
+          "skill": "interpret history within the context of the actions, values, attitudes and motives of people in the context of the past",
+          "ac": [
+            "ACHHS172",
+            "ACHHS173",
+            "ACHHS190",
+            "ACHHS191"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Research",
+      "skills": [
+        {
+          "skill": "ask and evaluate different kinds of questions about the past to inform an historical inquiry",
+          "ac": [
+            "ACHHS166",
+            "ACHHS167",
+            "ACHHS184",
+            "ACHHS185"
+          ]
+        },
+        {
+          "skill": "plan historical research to suit the purpose of an investigation",
+          "ac": [
+            ""
+          ]
+        },
+        {
+          "skill": "identify, locate, select and organise information from a variety of sources, including ICT and other methods",
+          "ac": [
+            "ACHHS168",
+            "ACHHS186"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Explanation and communication",
+      "skills": [
+        {
+          "skill": "develop historical texts, particularly explanations and historical arguments that use evidence from a range of sources",
+          "ac": [
+            "ACHHS174",
+            "ACHHS188",
+            "ACHHS192"
+          ]
+        },
+        {
+          "skill": "select and use a range of communication forms, such as oral, graphic, written and digital, to communicate effectively about the past for different audiences and different purposes",
+          "ac": [
+            "ACHHS175",
+            "ACHHS193"
+          ]
+        }
+      ]
+    }
+  ]
+}
