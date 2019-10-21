@@ -1,4 +1,4 @@
-package json2
+package jkv
 
 const (
 	ARR JTYPE = 1 << iota

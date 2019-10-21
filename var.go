@@ -1,9 +1,13 @@
 // ********** ALL Based On JQ Formatted JSON ********** //
 
-package json2
+package jkv
 
 import (
+	"crypto/md5"
+	"crypto/sha1"
+	"crypto/sha256"
 	"fmt"
+	"regexp"
 	"strings"
 	"time"
 
@@ -16,7 +20,7 @@ type (
 	S     = w.Str
 	I32   = w.I32
 	JTYPE int
-	jStr  string
+	// jStr  string
 )
 
 var (
@@ -82,8 +86,7 @@ const (
 	AOS12 = "[\n                          {\n                            " // 26, 28
 	AOE12 = "\n                          }\n                        ]"     // 26, 24
 
-	TraitFV = "\": "
-
+	TraitFV    = "\": "
 	Trait1EndV = ",\n" // prefix check
 	Trait2EndV = "\n"  // prefix check
 
@@ -91,25 +94,65 @@ const (
 	LvlMax     = 20 // init 20 max level in advances
 )
 
+// readonly var
 var (
-	sTAOS = []string{AOS0, AOS1, AOS2, AOS3, AOS4, AOS5, AOS6, AOS7, AOS8, AOS9, AOS10, AOS11, AOS12}
-	sTAOE = []string{AOE0, AOE1, AOE2, AOE3, AOE4, AOE5, AOE6, AOE7, AOE8, AOE9, AOE10, AOE11, AOE12}
+	sTAOS      = []string{AOS0, AOS1, AOS2, AOS3, AOS4, AOS5, AOS6, AOS7, AOS8, AOS9, AOS10, AOS11, AOS12}
+	sTAOE      = []string{AOE0, AOE1, AOE2, AOE3, AOE4, AOE5, AOE6, AOE7, AOE8, AOE9, AOE10, AOE11, AOE12}
+	pLinker    = pathLinker
+	rMD5, _    = regexp.Compile("[a-f0-9]{32}")
+	rSHA1, _   = regexp.Compile("[a-f0-9]{40}")
+	rSHA256, _ = regexp.Compile("[a-f0-9]{64}")
 )
 
-var (
-	pLinker = pathLinker
-	// lsLvlIPaths is 2D slice for each Level's each ipath
-	lsLvlIPaths = [][]string{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}
+// var (
+// 	// lsLvlIPaths is 2D slice for each Level's each ipath
+// 	lsLvlIPaths = [][]string{
+// 		{}, {}, {}, {}, {},
+// 		{}, {}, {}, {}, {},
+// 		{}, {}, {}, {}, {},
+// 		{}, {}, {}, {}, {},
+// 		{}, {}, {}, {}, {},
+// 	}
+// 	mPathMIdx   = make(map[string]int)    //
+// 	mIPathPos   = make(map[string]int)    //
+// 	mIPathValue = make(map[string]string) //
+// 	mIPathOID   = make(map[string]string) //
+// 	mOIDIPath   = make(map[string]string) //
+// 	mOIDObj     = make(map[string]string) //
+// 	mOIDLvl     = make(map[string]int)    // from 1 ...
+// 	mOIDType    = make(map[string]JTYPE)  // oid's type is OBJ or ARR|OBJ
+// )
 
-	mPathMIdx   = make(map[string]int)    //
-	mIPathPos   = make(map[string]int)    //
-	mIPathValue = make(map[string]string) //
-	mIPathOID   = make(map[string]string) //
-	mOIDIPath   = make(map[string]string) //
-	mOIDObj     = make(map[string]string) //
-	mOIDLvl     = make(map[string]int)    // from 1 ...
-	mOIDType    = make(map[string]JTYPE)  // oid's type is OBJ or ARR|OBJ
-)
+// JKV :
+type JKV struct {
+	json        string
+	lsLvlIPaths [][]string        // 2D slice for each Level's each ipath
+	mPathMIdx   map[string]int    //
+	mIPathPos   map[string]int    //
+	mIPathValue map[string]string //
+	mIPathOID   map[string]string //
+	mOIDIPath   map[string]string //
+	mOIDObj     map[string]string //
+	mOIDLvl     map[string]int    // from 1 ...
+	mOIDType    map[string]JTYPE  // oid's type is OBJ or ARR|OBJ
+}
+
+// ********************************************************** //
+
+// SHA1Str :
+func SHA1Str(s string) string {
+	return fSf("%x", sha1.Sum([]byte(s)))
+}
+
+// SHA256Str :
+func SHA256Str(s string) string {
+	return fSf("%x", sha256.Sum256([]byte(s)))
+}
+
+// MD5Str :
+func MD5Str(s string) string {
+	return fSf("%x", md5.Sum([]byte(s)))
+}
 
 // T : JSON line Search Feature.
 func T(lvl int) string {
