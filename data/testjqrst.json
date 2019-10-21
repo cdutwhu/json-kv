@@ -1,12 +1,4 @@
 {
-  "arrobjs": [
-    {
-      "f1": "v1"
-    },
-    {
-      "f2": "v2"
-    }
-  ],
   "NAPCodeFrame": {
     "RefId": "68cd1fba-65c5-4d44-9511-1c852d0e25da",
     "NAPTestRefId": "3e6aabba-8c62-4bcd-a0f6-e6995c039453",
@@ -2371,12 +2363,6 @@
           }
         }
       ]
-    }
-  },
-  "NAPSecond": {
-    "RefId": "68cd1fba-65c5-4d44-9511-1c852d0e25db",
-    "TestContent": {
-      "Test": true
     }
   }
 }

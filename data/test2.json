@@ -1,0 +1,13 @@
+{
+  "inquiry_skills": [
+    {
+      "name": "R/W",
+      "skills": [
+        {
+          "skill": "R",
+          "ac": "W"
+        }
+      ]
+    }
+  ]
+}

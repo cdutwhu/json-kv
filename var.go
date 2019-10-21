@@ -44,6 +44,7 @@ var (
 	sCount      = strings.Count
 	sReplace    = strings.Replace
 	sReplaceAll = strings.ReplaceAll
+	sIndex      = strings.Index
 	IF          = u.IF
 	MapKeys     = u.MapKeys
 	MapKVs      = u.MapKVs

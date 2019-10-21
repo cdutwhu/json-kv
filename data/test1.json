@@ -4,6 +4,8 @@
       "name": "Comprehension: chronology, terms and concepts",
       "skills": [
         {
+          "name": "inner name",
+          "skill1": "read and understand historical texts",
           "skill": "read and understand historical texts",
           "ac": [
             ""
@@ -23,7 +25,10 @@
             "ACHHS182"
           ]
         }
-      ]
+      ],
+      "object": {
+        "testf": "testv"
+      }
     },
     {
       "name": "Analysis and use of sources",

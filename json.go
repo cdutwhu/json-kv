@@ -5,7 +5,6 @@ package jkv
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 )
 
 func IsJSON(str string) bool {
@@ -461,49 +460,89 @@ func (jkv *JKV) Unfold() string {
 	if len(jkv.lsLvlIPaths[1]) == 0 {
 		frame = ""
 	} else if len(jkv.lsLvlIPaths[1]) != 0 && len(jkv.lsLvlIPaths[2]) == 0 {
-		frame = jkv.json // string(jstr)
+		frame = jkv.json
 	} else {
-		lvl2path := S(jkv.lsLvlIPaths[2][0]).RmTailFromLast("@").V()
-		if mLvlOIDs, _ := jkv.QueryPV(lvl2path, "*.*"); mLvlOIDs != nil && len(mLvlOIDs) > 0 {
-			for _, lvl := range MapKeys(mLvlOIDs).([]int) {
-				for _, oid := range mLvlOIDs[lvl] {
-					field := S(jkv.mOIDIPath[oid]).RmTailFromLast("@").V()
-					head := fSf("{\n  \"%s\": ", field)
-					frame = fSf("%s%s\n}", head, jkv.mOIDObj[oid])
-					// fPln(frame)
-					// if mOIDType[oid].IsObjArr() {
-					// 	fPf(" *** ex ***: array object\n")
-					// 	for _, oid := range AOIDStrToOIDs(jkv.mOIDObj[oid]) {
-					// 		fPf("[%s] %s\n", oid, jkv.mOIDObj[oid])
-					// 	}
-					// }
-				}
-				// fPln("\n ----------------------------------------------------------------- ")
-			}
-		}
+
+		firstField := jkv.lsLvlIPaths[1][0]
+		lvl1path := S(firstField).RmTailFromLast("@").V()
+		oid := jkv.mIPathValue[firstField]
+		frame = fSf("{\n  \"%s\": %s\n}", lvl1path, oid)
+
+		// lvl2path := S(jkv.lsLvlIPaths[2][0]).RmTailFromLast("@").V()
+		// if mLvlOIDs, _ := jkv.QueryPV(lvl2path, "*.*"); mLvlOIDs != nil && len(mLvlOIDs) > 0 {
+		// 	for _, lvl := range MapKeys(mLvlOIDs).([]int) {
+		// 		for _, oid := range mLvlOIDs[lvl] {
+		// 			field := S(jkv.mOIDIPath[oid]).RmTailFromLast("@").V()
+		// 			head := fSf("{\n  \"%s\": ", field)
+		// 			frame = fSf("%s%s\n}", head, jkv.mOIDObj[oid])
+		// 			// fPln(frame)
+		// 			// if mOIDType[oid].IsObjArr() {
+		// 			// 	fPf(" *** ex ***: array object\n")
+		// 			// 	for _, oid := range AOIDStrToOIDs(jkv.mOIDObj[oid]) {
+		// 			// 		fPf("[%s] %s\n", oid, jkv.mOIDObj[oid])
+		// 			// 	}
+		// 			// }
+		// 		}
+		// 		// fPln("\n ----------------------------------------------------------------- ")
+		// 	}
+		// }
 	}
 
 	// expand all
 	iExp := 1
 	for {
-		if iExp == 1 {
-			fmt.Println(frame)
-		}
-		// ***
 		if oids := rSHA1.FindAllString(frame, -1); oids != nil {
 			for _, oid := range oids {
-				frame = sReplaceAll(frame, oid, jkv.mOIDObj[oid])
+				obj := jkv.mOIDObj[oid]
+
+				// ************************************************ //
+
+				// fieldset, setval := "name", "\"------\""
+				// fieldsearch := fSf("\"%s%s", fieldset, TraitFV)
+				// if iExp == 4 {
+				// 	if i := sIndex(obj, fieldsearch); i > 0 {
+				// 		// pfStart := i
+				// 		// fPln(obj[pfStart : pfStart+len(fieldsearch)])
+				// 		pvStart, pvEnd := i+len(fieldsearch), 0
+				// 		if obj[pvStart] != '[' {
+				// 			pv1End := sIndex(obj[pvStart:], Trait1EndV)
+				// 			pv2End := sIndex(obj[pvStart:], Trait2EndV)
+				// 			if pv1End != -1 && pv2End == -1 {
+				// 				pvEnd = pv1End
+				// 			} else if pv1End == -1 && pv2End != -1 {
+				// 				pvEnd = pv2End
+				// 			} else {
+				// 				pvEnd = int(math.Min(float64(pv1End), float64(pv2End)))
+				// 			}
+
+				// 			// val := obj[pvStart : pvStart+pvEnd]
+				// 			// fPln(val)
+				// 		} else {
+				// 		}
+				// 		obj = obj[:pvStart] + setval + obj[pvStart+pvEnd:]
+				// 	}
+				// }
+
+				// ************************************************ //
+
+				frame = sReplaceAll(frame, oid, obj)
+
+				if obj == "[ oid, oid, ... ]" {
+					iExp--
+				}
 			}
 		} else {
 			break
 		}
-		// ***
+
 		iExp++
+
+		if iExp == 3 {
+			return frame // debug testing, not real json
+		}
 	}
 
-	fPln("--- Test ---")
-
-	if !IsJSON(frame) { // !jStr(frame).IsJSON() {
+	if !IsJSON(frame) {
 		panic("Unfold error, NOT VALID JSON")
 	}
 
