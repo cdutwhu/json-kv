@@ -1,11 +1,10 @@
 {
   "inquiry_skills": [
     {
-      "name": "R/W",
+      "name": "~~~~~",
       "skills": [
         {
-          "skill": "R",
-          "ac": "W"
+          "skill": "*****"
         }
       ]
     }

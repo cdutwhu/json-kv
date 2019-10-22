@@ -15,7 +15,7 @@ func IsJSON(str string) bool {
 
 // NewJKV :
 func NewJKV(jsonstr string) *JKV {
-	return &JKV{
+	jkv := &JKV{
 		json: jsonstr,
 		lsLvlIPaths: [][]string{
 			{}, {}, {}, {}, {},
@@ -33,19 +33,19 @@ func NewJKV(jsonstr string) *JKV {
 		mOIDLvl:     make(map[string]int),    // from 1 ...
 		mOIDType:    make(map[string]JTYPE),  // oid's type is OBJ or ARR|OBJ
 	}
+	jkv.init()
+	return jkv
 }
 
-// IsJSON :
-func (jkv *JKV) IsJSON() bool {
-	// var js json.RawMessage
-	// return json.Unmarshal([]byte(jkv.json), &js) == nil
+// isJSON :
+func (jkv *JKV) isJSON() bool {
 	return IsJSON(jkv.json)
 }
 
 // scan :                        L   posarr     pos L
 func (jkv *JKV) scan() (int, map[int][]int, map[int]int, error) {
 	Lm, offset := -1, 0
-	if s := jkv.json; jkv.IsJSON() {
+	if s := jkv.json; jkv.isJSON() {
 		mLvlFParr := make(map[int][]int)
 		for i := 0; i <= LvlMax; i++ {
 			mLvlFParr[i] = []int{}
@@ -289,8 +289,8 @@ func (jkv *JKV) pathType(fpath string, psSort []int, mFPosFPath map[int]string) 
 	panic("Shouldn't be here @ posByPath")
 }
 
-// Init : prepare <>
-func (jkv *JKV) Init() error {
+// init : prepare <>
+func (jkv *JKV) init() error {
 	if _, mLvlFParr, _, err := jkv.scan(); err == nil {
 		mFPosFNameList := jkv.fields(mLvlFParr)
 		// for iL, mPN := range mFPosFNameList {
@@ -311,7 +311,7 @@ func (jkv *JKV) Init() error {
 
 			oid := ""
 			if !t.IsLeafValue() {
-				if !IsJSON(v) { // !jStr(v).IsJSON() {
+				if !IsJSON(v) {
 					panic("fetching value error")
 				}
 				oid = SHA1Str(v)
@@ -320,12 +320,6 @@ func (jkv *JKV) Init() error {
 				if t.IsObj() || t.IsObjArr() {
 					jkv.mOIDType[oid] = t
 				}
-				// switch {
-				// case t.IsObj():
-				// 	mOIDType[oid] = OBJ
-				// case t.IsObjArr():
-				// 	mOIDType[oid] = ARR | OBJ
-				// }
 			}
 
 			fp := fpaths[p]
@@ -367,7 +361,7 @@ func (jkv *JKV) Init() error {
 
 		// [obj-arr whole value string] -> [aoid arr string]
 		for oid := range jkv.mOIDObj {
-			if strOIDs := jkv.ExpAOID(oid); strOIDs != "" {
+			if strOIDs := jkv.expAOID(oid); strOIDs != "" {
 				jkv.mOIDObj[oid] = strOIDs
 				lvl := jkv.mOIDLvl[oid]
 				for _, aoid := range AOIDStrToOIDs(strOIDs) {
@@ -382,8 +376,8 @@ func (jkv *JKV) Init() error {
 	return errors.New("scan error")
 }
 
-// ExpAOID : only can be used after mOIDType assigned
-func (jkv *JKV) ExpAOID(aoid string) string {
+// expAOID : only can be used after mOIDType assigned
+func (jkv *JKV) expAOID(aoid string) string {
 	if typ, ok := jkv.mOIDType[aoid]; ok && typ.IsObjArr() {
 		strobjs := jkv.mOIDObj[aoid]
 		objs := fValuesOnObjs(strobjs)
@@ -418,14 +412,9 @@ func (jkv *JKV) QueryPV(path string, value interface{}) (mLvlOIDs map[int][]stri
 		valstr = fSf("%v", value)
 	}
 
-	ignore := false
-	if valstr == "\"*.*\"" {
-		ignore = true
-	}
-
 	for i := 0; i < jkv.mPathMIdx[path]; i++ {
 		ipath := fSf("%s@%d", path, i)
-		if v, ok := jkv.mIPathValue[ipath]; ok && (v == valstr || ignore) {
+		if v, ok := jkv.mIPathValue[ipath]; ok && v == valstr {
 			pos, PIPath := jkv.mIPathPos[ipath], ""
 			for upgen := 1; upgen <= nGen; upgen++ {
 				ppath := S(ipath).RmTailFromLastN(pLinker, upgen).V()
@@ -456,7 +445,7 @@ func (jkv *JKV) QueryPV(path string, value interface{}) (mLvlOIDs map[int][]stri
 }
 
 // Unfold :
-func (jkv *JKV) Unfold(toLvl int) (string, int) {
+func (jkv *JKV) Unfold(toLvl int, mask map[string]string) (string, int) {
 	frame := ""
 	if len(jkv.lsLvlIPaths[1]) == 0 {
 		frame = ""
@@ -467,13 +456,6 @@ func (jkv *JKV) Unfold(toLvl int) (string, int) {
 		lvl1path := S(firstField).RmTailFromLast("@").V()
 		oid := jkv.mIPathValue[firstField]
 		frame = fSf("{\n  \"%s\": %s\n}", lvl1path, oid)
-	}
-
-	mask := map[string]string{
-		"NAPCodeFrame~~RefId":                                "R/W",
-		"NAPCodeFrame~~NAPTestRefId":                         "W",
-		"NAPCodeFrame~~TestContent~~TestName":                "W",
-		"NAPCodeFrame~~TestContent~~DomainBands~~Band1Lower": "W",
 	}
 
 	// expanding ...
@@ -561,17 +543,9 @@ func Mask(obj string, lvl int, maskPathValue map[string]string) string {
 				// val := obj[pvStart : pvStart+pvEnd]
 				// fPln(val)
 
-				repstr := ""
-				switch {
-				case !XIn(value, []string{"W", "w", "R/W", "r/w"}):
-					repstr = nowritestr
-				case !XIn(value, []string{"R", "r", "R/W", "r/w"}):
-					repstr = noreadstr
-				default:
-					continue // next mask path
+				if rSHA1.FindStringIndex(value) == nil {
+					obj = obj[:pvStart] + value + obj[pvStart+pvEnd:]
 				}
-
-				obj = obj[:pvStart] + repstr + obj[pvStart+pvEnd:]
 			}
 		}
 	}
