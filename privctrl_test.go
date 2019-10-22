@@ -18,6 +18,8 @@ func TestLoad2JSON(t *testing.T) {
 			fPln(ipath, val)
 		}
 
+		fPln(" --------------------------------------------------------- ")
+
 		if jsonbytes, e := ioutil.ReadFile("./data/test1.json"); e == nil {
 			jkv1 := NewJKV(string(jsonbytes))
 			jkv1.Init()

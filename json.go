@@ -5,6 +5,7 @@ package jkv
 import (
 	"encoding/json"
 	"errors"
+	"math"
 )
 
 func IsJSON(str string) bool {
@@ -466,85 +467,44 @@ func (jkv *JKV) Unfold(toLvl int) (string, int) {
 		lvl1path := S(firstField).RmTailFromLast("@").V()
 		oid := jkv.mIPathValue[firstField]
 		frame = fSf("{\n  \"%s\": %s\n}", lvl1path, oid)
-
-		// lvl2path := S(jkv.lsLvlIPaths[2][0]).RmTailFromLast("@").V()
-		// if mLvlOIDs, _ := jkv.QueryPV(lvl2path, "*.*"); mLvlOIDs != nil && len(mLvlOIDs) > 0 {
-		// 	for _, lvl := range MapKeys(mLvlOIDs).([]int) {
-		// 		for _, oid := range mLvlOIDs[lvl] {
-		// 			field := S(jkv.mOIDIPath[oid]).RmTailFromLast("@").V()
-		// 			head := fSf("{\n  \"%s\": ", field)
-		// 			frame = fSf("%s%s\n}", head, jkv.mOIDObj[oid])
-		// 			// fPln(frame)
-		// 			// if mOIDType[oid].IsObjArr() {
-		// 			// 	fPf(" *** ex ***: array object\n")
-		// 			// 	for _, oid := range AOIDStrToOIDs(jkv.mOIDObj[oid]) {
-		// 			// 		fPf("[%s] %s\n", oid, jkv.mOIDObj[oid])
-		// 			// 	}
-		// 			// }
-		// 		}
-		// 		// fPln("\n ----------------------------------------------------------------- ")
-		// 	}
-		// }
 	}
 
-	// expand all
+	mask := map[string]string{
+		"NAPCodeFrame~~RefId":                                "R/W",
+		"NAPCodeFrame~~NAPTestRefId":                         "W",
+		"NAPCodeFrame~~TestContent~~TestName":                "W",
+		"NAPCodeFrame~~TestContent~~DomainBands~~Band1Lower": "W",
+	}
+
+	// expanding ...
 	iExp := 0
 	for {
 		iExp++
 
-		if toLvl == 1 && iExp == 1 {
-			return frame, iExp // debug testing, NOT REAL JSON
+		// [object array whole oid] => [ oid, oid, oid ... ]
+		for _, oid := range rSHA1.FindAllString(frame, -1) {
+			if jkv.mOIDType[oid].IsObjArr() {
+				frame = sReplaceAll(frame, oid, jkv.mOIDObj[oid])
+			}
+		}
+		if toLvl == 1 && iExp == toLvl {
+			return frame, iExp // DEBUG testing, NOT REAL JSON
 		}
 
 		if oids := rSHA1.FindAllString(frame, -1); oids != nil {
 			for _, oid := range oids {
 				obj := jkv.mOIDObj[oid]
-
-				// ************************************************ //
-
-				// fieldset, setval := "name", "\"------\""
-				// fieldsearch := fSf("\"%s%s", fieldset, TraitFV)
-				// if iExp == 4 {
-				// 	if i := sIndex(obj, fieldsearch); i > 0 {
-				// 		// pfStart := i
-				// 		// fPln(obj[pfStart : pfStart+len(fieldsearch)])
-				// 		pvStart, pvEnd := i+len(fieldsearch), 0
-				// 		if obj[pvStart] != '[' {
-				// 			pv1End := sIndex(obj[pvStart:], Trait1EndV)
-				// 			pv2End := sIndex(obj[pvStart:], Trait2EndV)
-				// 			if pv1End != -1 && pv2End == -1 {
-				// 				pvEnd = pv1End
-				// 			} else if pv1End == -1 && pv2End != -1 {
-				// 				pvEnd = pv2End
-				// 			} else {
-				// 				pvEnd = int(math.Min(float64(pv1End), float64(pv2End)))
-				// 			}
-
-				// 			// val := obj[pvStart : pvStart+pvEnd]
-				// 			// fPln(val)
-				// 		} else {
-				// 		}
-				// 		obj = obj[:pvStart] + setval + obj[pvStart+pvEnd:]
-				// 	}
-				// }
-
-				// ************************************************ //
-
-				frame = sReplaceAll(frame, oid, obj)
+				frame = sReplaceAll(frame, oid, Mask(obj, iExp, mask))
 
 				// [object array whole oid] => [ oid, oid, oid ... ]
-				if oids := rSHA1.FindAllString(obj, -1); oids != nil {
-					for _, oid := range oids {
-						if jkv.mOIDType[oid].IsObjArr() {
-							obj := jkv.mOIDObj[oid]
-							frame = sReplaceAll(frame, oid, obj)
-						}
+				for _, oid := range rSHA1.FindAllString(obj, -1) {
+					if jkv.mOIDType[oid].IsObjArr() {
+						frame = sReplaceAll(frame, oid, jkv.mOIDObj[oid])
 					}
 				}
 			}
-
-			if toLvl > 1 && iExp == toLvl-1 {
-				return frame, toLvl // debug testing, NOT REAL JSON
+			if toLvl > 1 && iExp+1 == toLvl {
+				return frame, toLvl // DEBUG testing, NOT REAL JSON
 			}
 
 		} else {
@@ -557,6 +517,66 @@ func (jkv *JKV) Unfold(toLvl int) (string, int) {
 	}
 
 	return frame, iExp
+}
+
+// Mask :
+func Mask(obj string, lvl int, maskPathValue map[string]string) string {
+
+	for path, value := range maskPathValue {
+
+		pathset := S(path).RmTailFromLast("@").V()
+		fieldset := S(pathset).RmHeadToLast(pLinker).V()
+		I := sCount(pathset, pLinker) + 1
+		fieldsearch := fSf("\"%s%s", fieldset, TraitFV)
+
+		if lvl+1 == I {
+			if i := sIndex(obj, fieldsearch); i > 0 {
+
+				// pfStart := i
+				// fPln(obj[pfStart : pfStart+len(fieldsearch)])
+
+				pvStart, pvEnd := i+len(fieldsearch), 0
+				pv1End, pv2End := 0, 0
+				if obj[pvStart] != '[' {
+					pv1End = sIndex(obj[pvStart:], Trait1EndV)
+					pv2End = sIndex(obj[pvStart:], Trait2EndV)
+				} else {
+					if pv1End = sIndex(obj[pvStart:], Trait3EndV); pv1End >= 0 {
+						pv1End++
+					}
+					if pv2End = sIndex(obj[pvStart:], Trait4EndV); pv2End >= 0 {
+						pv2End++
+					}
+				}
+
+				switch {
+				case pv1End != -1 && pv2End == -1:
+					pvEnd = pv1End
+				case pv1End == -1 && pv2End != -1:
+					pvEnd = pv2End
+				default:
+					pvEnd = int(math.Min(float64(pv1End), float64(pv2End)))
+				}
+
+				// val := obj[pvStart : pvStart+pvEnd]
+				// fPln(val)
+
+				repstr := ""
+				switch {
+				case !XIn(value, []string{"W", "w", "R/W", "r/w"}):
+					repstr = nowritestr
+				case !XIn(value, []string{"R", "r", "R/W", "r/w"}):
+					repstr = noreadstr
+				default:
+					continue // next mask path
+				}
+
+				obj = obj[:pvStart] + repstr + obj[pvStart+pvEnd:]
+			}
+		}
+	}
+
+	return obj
 }
 
 // Query : unfinished ...

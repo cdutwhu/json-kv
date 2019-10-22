@@ -88,11 +88,16 @@ const (
 	AOE12 = "\n                          }\n                        ]"     // 26, 24
 
 	TraitFV    = "\": "
-	Trait1EndV = ",\n" // prefix check
-	Trait2EndV = "\n"  // prefix check
+	Trait1EndV = ",\n"
+	Trait2EndV = "\n"
+	Trait3EndV = "],\n"
+	Trait4EndV = "]\n"
 
 	pathLinker = "~~"
-	LvlMax     = 20 // init 20 max level in advances
+	nowritestr = "------"
+	noreadstr  = "******"
+
+	LvlMax = 20 // init 20 max level in advances
 )
 
 // readonly var
