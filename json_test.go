@@ -76,10 +76,10 @@ func TestUnfold(t *testing.T) {
 		jkv := NewJKV(string(jsonbytes))
 		jkv.Init()
 		fPln("--- Init ---")
-		fPln(jkv.Unfold())
+		fPln(jkv.Unfold(5))
 
-		fPln(jkv.mOIDLvl["ab6f49bdc782bb205ce4682a141d8ad9854f2a34"])
-		fPln(jkv.mOIDLvl["c10256e43dba81f035c95631437cf45ba41c0170"])
+		fPln(jkv.mOIDLvl["fe7262a928bbe05f8a42bab98ebec56a8e1e9379"])
+		fPln(jkv.mOIDLvl["887450b46a52ccad78f6a74f34c2699c649b17cd"])
 	}
 }
 

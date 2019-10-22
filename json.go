@@ -455,14 +455,13 @@ func (jkv *JKV) QueryPV(path string, value interface{}) (mLvlOIDs map[int][]stri
 }
 
 // Unfold :
-func (jkv *JKV) Unfold() string {
+func (jkv *JKV) Unfold(toLvl int) (string, int) {
 	frame := ""
 	if len(jkv.lsLvlIPaths[1]) == 0 {
 		frame = ""
 	} else if len(jkv.lsLvlIPaths[1]) != 0 && len(jkv.lsLvlIPaths[2]) == 0 {
 		frame = jkv.json
 	} else {
-
 		firstField := jkv.lsLvlIPaths[1][0]
 		lvl1path := S(firstField).RmTailFromLast("@").V()
 		oid := jkv.mIPathValue[firstField]
@@ -489,8 +488,14 @@ func (jkv *JKV) Unfold() string {
 	}
 
 	// expand all
-	iExp := 1
+	iExp := 0
 	for {
+		iExp++
+
+		if toLvl == 1 && iExp == 1 {
+			return frame, iExp // debug testing, NOT REAL JSON
+		}
+
 		if oids := rSHA1.FindAllString(frame, -1); oids != nil {
 			for _, oid := range oids {
 				obj := jkv.mOIDObj[oid]
@@ -527,26 +532,31 @@ func (jkv *JKV) Unfold() string {
 
 				frame = sReplaceAll(frame, oid, obj)
 
-				if obj == "[ oid, oid, ... ]" {
-					iExp--
+				// [object array whole oid] => [ oid, oid, oid ... ]
+				if oids := rSHA1.FindAllString(obj, -1); oids != nil {
+					for _, oid := range oids {
+						if jkv.mOIDType[oid].IsObjArr() {
+							obj := jkv.mOIDObj[oid]
+							frame = sReplaceAll(frame, oid, obj)
+						}
+					}
 				}
 			}
+
+			if toLvl > 1 && iExp == toLvl-1 {
+				return frame, toLvl // debug testing, NOT REAL JSON
+			}
+
 		} else {
 			break
-		}
-
-		iExp++
-
-		if iExp == 3 {
-			return frame // debug testing, not real json
 		}
 	}
 
 	if !IsJSON(frame) {
-		panic("Unfold error, NOT VALID JSON")
+		panic("UNFOLD ERROR, NOT VALID JSON")
 	}
 
-	return frame
+	return frame, iExp
 }
 
 // Query : unfinished ...

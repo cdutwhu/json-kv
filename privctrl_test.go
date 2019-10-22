@@ -13,7 +13,7 @@ func TestLoad2JSON(t *testing.T) {
 		jkv2 := NewJKV(string(jsonbytes))
 		jkv2.Init()
 		fPln("--- Init 2 ---")
-		fPln(jkv2.Unfold())
+		fPln(jkv2.Unfold(-1))
 		for ipath, val := range jkv2.mIPathValue {
 			fPln(ipath, val)
 		}
@@ -23,7 +23,6 @@ func TestLoad2JSON(t *testing.T) {
 			jkv1.Init()
 			fPln("--- Init 1 ---")
 
-			
 			for ipath, val := range jkv1.mIPathValue {
 				fPln(ipath, val)
 			}
