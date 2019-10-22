@@ -63,7 +63,7 @@ func TestFType(t *testing.T) {
 
 func TestInit(t *testing.T) {
 	defer tmTrack(time.Now())
-	if jsonbytes, e := ioutil.ReadFile("./data/infmt.json"); e == nil {
+	if jsonbytes, e := ioutil.ReadFile("./data/testjqrst.json"); e == nil {
 		jkv := NewJKV(string(jsonbytes))
 		jkv.Init()
 	}
@@ -76,7 +76,7 @@ func TestUnfold(t *testing.T) {
 		jkv := NewJKV(string(jsonbytes))
 		jkv.Init()
 		fPln("--- Init ---")
-		fPln(jkv.Unfold(4))
+		fPln(jkv.Unfold(0))
 
 		// fPln(jkv.mOIDLvl["fe7262a928bbe05f8a42bab98ebec56a8e1e9379"])
 		// fPln(jkv.mOIDLvl["887450b46a52ccad78f6a74f34c2699c649b17cd"]).

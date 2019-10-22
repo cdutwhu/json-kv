@@ -94,8 +94,8 @@ const (
 	Trait4EndV = "]\n"
 
 	pathLinker = "~~"
-	nowritestr = "------"
-	noreadstr  = "******"
+	nowritestr = "\"------\""
+	noreadstr  = "\"******\""
 
 	LvlMax = 20 // init 20 max level in advances
 )
