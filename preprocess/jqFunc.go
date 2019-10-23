@@ -9,9 +9,6 @@ import (
 
 func prepareJQ(jqDirs ...string) (jqWD, oriWD string, err error) {
 	fn := "prepareJQ"
-	jq := "jq.exe" // windows
-	// jq := "jq" // linux
-
 	oriWD, err = os.Getwd()
 	FailOnErr("Getwd() 1 fatal @ %v: %w", fn, err)
 	for _, jqWD = range jqDirs {
@@ -32,12 +29,8 @@ func FmtJSONStr(json string, jqDirs ...string) string {
 	defer func() { os.Chdir(oriWD) }()
 
 	json = "'" + strings.ReplaceAll(json, "'", "\\'") + "'" // *** deal with <single quote> in "echo" ***
-
-	// cmdstr := "echo " + json + ` | ./jq .`    // linux
-	// cmd := exec.Command("bash", "-c", cmdstr) // linux
-
-	cmdstr := "echo " + json + ` | ./jq.exe .`            // windows
-	cmd := exec.Command("PowerShell", "-Command", cmdstr) // windows
+	cmdstr := "echo " + json + ` | ./` + jq + " ."
+	cmd := exec.Command(execCmdName, execCmdP0, cmdstr)
 
 	if output, err := cmd.Output(); err == nil {
 		return string(output)
@@ -51,11 +44,8 @@ func FmtJSONFile(file string, jqDirs ...string) string {
 	_, oriWD, _ := prepareJQ(jqDirs...)
 	defer func() { os.Chdir(oriWD) }()
 
-	// cmdstr := "cat " + file + ` | ./jq .`     // linux
-	// cmd := exec.Command("bash", "-c", cmdstr) // linux
-
-	cmdstr := "cat " + file + ` | ./jq.exe .`             // windows
-	cmd := exec.Command("PowerShell", "-Command", cmdstr) // windows
+	cmdstr := "cat " + file + ` | ./` + jq + " ."
+	cmd := exec.Command(execCmdName, execCmdP0, cmdstr)
 
 	if output, err := cmd.Output(); err == nil {
 		return string(output)
