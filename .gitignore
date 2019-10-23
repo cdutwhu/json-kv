@@ -1,1 +1,5 @@
 .vscode
+jq.exe
+jq
+./preprocess/utils/jq.exe
+./preprocess/utils/jq
