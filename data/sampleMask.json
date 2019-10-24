@@ -1,0 +1,17 @@
+{
+    "glossary": {        
+        "GlossDiv": {            
+            "GlossList": {
+                "GlossEntry": {
+                    "ID": "-----",
+                    "SortAs": "-----",
+                    "GlossDef": {
+                        "para": "-----",
+                        "GlossSeeAlso": "*****"
+                    },
+                    "GlossSee": "*****"
+                }
+            }
+        }
+    }
+} 

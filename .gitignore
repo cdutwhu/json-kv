@@ -1,5 +1,7 @@
 .vscode
 jq.exe
 jq
-./preprocess/utils/jq.exe
-./preprocess/utils/jq
+./jkv/jq.exe
+./jkv/jq
+./preprocess/utils
+./build

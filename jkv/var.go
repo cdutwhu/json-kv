@@ -20,7 +20,6 @@ type (
 	S     = w.Str
 	I32   = w.I32
 	JTYPE int
-	// jStr  string
 )
 
 var (
@@ -54,7 +53,7 @@ var (
 	SliceCover  = u.SliceCover
 	MatchAssign = u.MatchAssign
 	XIn         = u.XIn
-	BLANK       = w.BLANK
+	BLANK       = " \t\n\r"
 )
 
 const (
@@ -94,10 +93,7 @@ const (
 	Trait4EndV = "]\n"
 
 	pathLinker = "~~"
-	// nowritestr = "\"------\""
-	// noreadstr  = "\"******\""
-
-	LvlMax = 20 // init 20 max level in advances
+	LvlMax     = 20 // init 20 max level in advances
 )
 
 // readonly var
@@ -131,16 +127,16 @@ var (
 
 // JKV :
 type JKV struct {
-	json        string
-	lsLvlIPaths [][]string        // 2D slice for each Level's each ipath
-	mPathMIdx   map[string]int    //
-	mIPathPos   map[string]int    //
-	mIPathValue map[string]string //
-	mIPathOID   map[string]string //
-	mOIDIPath   map[string]string //
-	mOIDObj     map[string]string //
-	mOIDLvl     map[string]int    // from 1 ...
-	mOIDType    map[string]JTYPE  // oid's type is OBJ or ARR|OBJ
+	json          string
+	lsLvlIPaths   [][]string        // 2D slice for each Level's each ipath
+	mPathMIdx     map[string]int    //
+	mIPathPos     map[string]int    //
+	MapIPathValue map[string]string //
+	mIPathOID     map[string]string //
+	mOIDIPath     map[string]string //
+	mOIDObj       map[string]string //
+	mOIDLvl       map[string]int    // from 1 ...
+	mOIDType      map[string]JTYPE  // oid's type is OBJ or ARR|OBJ
 }
 
 // ********************************************************** //

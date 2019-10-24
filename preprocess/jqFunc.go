@@ -20,7 +20,7 @@ func prepareJQ(jqDirs ...string) (jqWD, oriWD string, err error) {
 			return jqWD, oriWD, nil
 		}
 	}
-	FailOnErr("%s is not found @ %v", jq, errors.New(fn))
+	FailOnErr("[%s] is not found @ %v", jq, errors.New(fn))
 	return "", "", nil
 }
 

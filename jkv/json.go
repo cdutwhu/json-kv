@@ -24,14 +24,14 @@ func NewJKV(jsonstr string) *JKV {
 			{}, {}, {}, {}, {},
 			{}, {}, {}, {}, {},
 		},
-		mPathMIdx:   make(map[string]int),    //
-		mIPathPos:   make(map[string]int),    //
-		mIPathValue: make(map[string]string), //
-		mIPathOID:   make(map[string]string), //
-		mOIDIPath:   make(map[string]string), //
-		mOIDObj:     make(map[string]string), //
-		mOIDLvl:     make(map[string]int),    // from 1 ...
-		mOIDType:    make(map[string]JTYPE),  // oid's type is OBJ or ARR|OBJ
+		mPathMIdx:     make(map[string]int),    //
+		mIPathPos:     make(map[string]int),    //
+		MapIPathValue: make(map[string]string), //
+		mIPathOID:     make(map[string]string), //
+		mOIDIPath:     make(map[string]string), //
+		mOIDObj:       make(map[string]string), //
+		mOIDLvl:       make(map[string]int),    // from 1 ...
+		mOIDType:      make(map[string]JTYPE),  // oid's type is OBJ or ARR|OBJ
 	}
 	jkv.init()
 	return jkv
@@ -325,7 +325,7 @@ func (jkv *JKV) init() error {
 			fp := fpaths[p]
 			fip := fSf("%s@%d", fp, jkv.mPathMIdx[fp])
 			jkv.mPathMIdx[fp]++
-			jkv.mIPathValue[fip] = v
+			jkv.MapIPathValue[fip] = v
 			jkv.mIPathPos[fip] = p
 			// fPf("DEBUG: %-5d%-5d[%-7s]  [%-60s]  %s\n", i, p, t.Str(), fip, v)
 
@@ -414,7 +414,7 @@ func (jkv *JKV) QueryPV(path string, value interface{}) (mLvlOIDs map[int][]stri
 
 	for i := 0; i < jkv.mPathMIdx[path]; i++ {
 		ipath := fSf("%s@%d", path, i)
-		if v, ok := jkv.mIPathValue[ipath]; ok && v == valstr {
+		if v, ok := jkv.MapIPathValue[ipath]; ok && v == valstr {
 			pos, PIPath := jkv.mIPathPos[ipath], ""
 			for upgen := 1; upgen <= nGen; upgen++ {
 				ppath := S(ipath).RmTailFromLastN(pLinker, upgen).V()
@@ -426,7 +426,7 @@ func (jkv *JKV) QueryPV(path string, value interface{}) (mLvlOIDs map[int][]stri
 					}
 					PIPath = pipath
 				}
-				if pid, ok := jkv.mIPathValue[PIPath]; ok {
+				if pid, ok := jkv.MapIPathValue[PIPath]; ok {
 					if _, ok := jkv.mOIDObj[pid]; ok {
 						iLvl := nGen - upgen + 1
 						if !XIn(pid, mLvlOIDs[iLvl]) {
@@ -436,7 +436,7 @@ func (jkv *JKV) QueryPV(path string, value interface{}) (mLvlOIDs map[int][]stri
 							}
 						}
 					}
-					// break // if  search only the first one, break here !
+					// break // if search only the first one, break here !
 				}
 			}
 		}
@@ -454,7 +454,7 @@ func (jkv *JKV) Unfold(toLvl int, mask map[string]string) (string, int) {
 	} else {
 		firstField := jkv.lsLvlIPaths[1][0]
 		lvl1path := S(firstField).RmTailFromLast("@").V()
-		oid := jkv.mIPathValue[firstField]
+		oid := jkv.MapIPathValue[firstField]
 		frame = fSf("{\n  \"%s\": %s\n}", lvl1path, oid)
 	}
 
